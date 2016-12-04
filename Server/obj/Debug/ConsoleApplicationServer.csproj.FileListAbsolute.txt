@@ -1,0 +1,11 @@
+D:\Projects\Stocks\ConsoleApplicationServer\bin\Debug\ConsoleApplicationServer.exe.config
+D:\Projects\Stocks\Server\bin\Debug\ConsoleApplicationServer.exe.config
+D:\Projects\Stocks\Server\bin\Debug\ConsoleApplicationServer.exe
+D:\Projects\Stocks\Server\bin\Debug\ConsoleApplicationServer.pdb
+D:\Projects\Stocks\Server\bin\Debug\TableDependency.dll
+D:\Projects\Stocks\Server\bin\Debug\TableDependency.SqlClient.dll
+D:\Projects\Stocks\Server\obj\Debug\ConsoleApplicationServer.exe
+D:\Projects\Stocks\Server\obj\Debug\ConsoleApplicationServer.pdb
+D:\Projects\StockPrices\Server\bin\Debug\ConsoleApplicationServer.exe.config
+D:\Projects\StockPrices\Server\obj\Debug\ConsoleApplicationServer.exe
+D:\Projects\StockPrices\Server\obj\Debug\ConsoleApplicationServer.pdb

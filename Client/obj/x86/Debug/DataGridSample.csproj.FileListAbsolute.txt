@@ -1,0 +1,16 @@
+D:\Projects\Stocks\Client\bin\Debug\DataGridSample.exe.config
+D:\Projects\Stocks\Client\bin\Debug\DataGridSample.exe
+D:\Projects\Stocks\Client\bin\Debug\DataGridSample.pdb
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.csprojResolveAssemblyReference.cache
+D:\Projects\Stocks\Client\obj\x86\Debug\Window1.baml
+D:\Projects\Stocks\Client\obj\x86\Debug\Window1.g.cs
+D:\Projects\Stocks\Client\obj\x86\Debug\App.g.cs
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample_MarkupCompile.cache
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.g.resources
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.Properties.Resources.resources
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.csproj.GenerateResource.Cache
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.exe
+D:\Projects\Stocks\Client\obj\x86\Debug\DataGridSample.pdb
+D:\Projects\StockPrices\Client\bin\Debug\DataGridSample.exe.config
+D:\Projects\StockPrices\Client\obj\x86\Debug\DataGridSample.exe
+D:\Projects\StockPrices\Client\obj\x86\Debug\DataGridSample.pdb
