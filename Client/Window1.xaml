@@ -13,6 +13,8 @@
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
             </DataGrid.Columns>
+            
+            
 
         </DataGrid>
     </Grid>

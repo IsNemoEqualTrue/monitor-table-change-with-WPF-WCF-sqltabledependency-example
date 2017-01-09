@@ -1,0 +1,6 @@
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\obj\Debug\ConsoleApplicationWriterPrice.csprojResolveAssemblyReference.cache
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\bin\Debug\ConsoleApplicationWriterPrice.exe.config
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\bin\Debug\ConsoleApplicationWriterPrice.exe
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\bin\Debug\ConsoleApplicationWriterPrice.pdb
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\obj\Debug\ConsoleApplicationWriterPrice.exe
+D:\Projects\StockPrices\Writer\ConsoleApplicationWriterPrice\obj\Debug\ConsoleApplicationWriterPrice.pdb

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridSample", "Client\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationServer", "Server\ConsoleApplicationServer.csproj", "{4E9CF688-EABA-4F39-AB1B-AA68C00EF2A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Writer", "Writer", "{B8C0D011-0DCD-4542-8851-02153FE331A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationWriterPrice", "Writer\ConsoleApplicationWriterPrice\ConsoleApplicationWriterPrice.csproj", "{B91D97A9-12F0-42C1-95DE-6242C924F122}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{4E9CF688-EABA-4F39-AB1B-AA68C00EF2A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E9CF688-EABA-4F39-AB1B-AA68C00EF2A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{4E9CF688-EABA-4F39-AB1B-AA68C00EF2A8}.Release|x86.Build.0 = Release|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Debug|x86.Build.0 = Debug|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Release|x86.ActiveCfg = Release|Any CPU
+		{B91D97A9-12F0-42C1-95DE-6242C924F122}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +52,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FFEE8AC0-17F8-4628-A294-15034D5BA7CF} = {0580FAFE-C00C-492F-87BE-A10DAC411397}
 		{4E9CF688-EABA-4F39-AB1B-AA68C00EF2A8} = {5FDC1544-5894-444C-97B6-5D44124456D9}
+		{B91D97A9-12F0-42C1-95DE-6242C924F122} = {B8C0D011-0DCD-4542-8851-02153FE331A0}
 	EndGlobalSection
 EndGlobal
