@@ -77,11 +77,13 @@ After that, we create the WCF service interfaces:
 
 Now we install SqlTableDependency nuget package:
 
-**PM> Install-Package SqlTableDependency**
+```
+PM> Install-Package SqlTableDependency
+```
 
-```C#
 We implement now the WCF service:
 
+```C#
     [ServiceBehavior(
             InstanceContextMode = InstanceContextMode.Single, 
             ConcurrencyMode = ConcurrencyMode.Single)]
