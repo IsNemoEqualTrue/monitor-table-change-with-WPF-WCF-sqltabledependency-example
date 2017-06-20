@@ -20,4 +20,8 @@ This example show how to keep up to date WPF client applications displaying Stoc
 ### WCF server application implementing Publish-Subscribe pattern
 Let's assume that we have a table as:
 
+![alt text][shema]
+
+[shema]: https://github.com/christiandelbianco/Monitor-table-change-with-WPF-WCF-sqltabledependency/blob/master/Schema-min.png "Notifications"
+
 
