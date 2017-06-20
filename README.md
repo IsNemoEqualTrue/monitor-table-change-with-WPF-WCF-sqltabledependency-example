@@ -1,6 +1,6 @@
 # Audit table change with WPF, WCF and SqlTableDependency
 
-SqlTableDependency is an open source component that can create a series of database objects used to receive notifications on table record change. When any insert/update/delete operation is detected, a change notification containing the record’s status is sent to SqlTableDependency, thereby eliminating the need of an additional SELECT to update application’s data.
+**SqlTableDependency** is an open source component that can create a series of database objects used to receive notifications on table record change. When any insert/update/delete operation is detected, a change notification containing the record’s status is sent to SqlTableDependency, thereby eliminating the need of an additional SELECT to update application’s data.
 
 To get notifications, SqlTableDependency provides an on the fly low-level implementation of an infrastructure composed of a table trigger, contracts, messages, queue, service broker and a clean-up stored procedure.
 
@@ -360,4 +360,4 @@ Our client application executes an initial request to WCF, just to fill its grid
     }
 ```
 
-For More info about SqlTableDependency, refere to https://github.com/christiandelbianco/monitor-table-change-with-sqltabledependency "Logo Title Text 2" 
+For more info about SqlTableDependency, refere to https://github.com/christiandelbianco/monitor-table-change-with-sqltabledependency 
