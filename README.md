@@ -279,3 +279,85 @@ And to conclude, we code the hosting part:
 ```
 
 ### WPF client applications
+As first step we need to create a WCF's proxy to execute the price change subscription and of course to read the initial list of stocks. This operation can be done from visual studio: run the server application and then Add a service reference typing the WCF url end point:
+
+![alt text][proxy]
+
+[proxy]: https://github.com/christiandelbianco/Monitor-table-change-with-WPF-WCF-sqltabledependency/blob/master/ProxyGeneration-min.png "Proxy"
+
+We prepare the layout as follow:
+
+```XML
+<Window x:Class="DataGridSample.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataGrid Sample" Height="350" Width="776">
+    <Grid>
+        <DataGrid Height="302" Width="750" HorizontalAlignment="Left" Margin="10,10,0,0" 
+          Name="McDataGrid" VerticalAlignment="Top" RowHeight="30" ColumnWidth="auto" 
+                  ColumnHeaderHeight="30" HeadersVisibility="Column" AlternatingRowBackground="Silver"
+                  BorderBrush="Gray" BorderThickness="1" AutoGenerateColumns="False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Code" Binding="{Binding Code}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>
+```
+
+Our client application executes an initial request to WCF, just to fill its grid. After that, the application subscribe its self as listener for price change notifications. In this way, every time a stock is updated, a notification containing fresh values is received:
+
+```C#
+    public partial class Window1 : Window, IPriceTickerCallback
+    {
+        private readonly IList<Stock> _stocks;
+        private readonly PriceTickerClient _proxy;
+
+        public Window1()
+        {
+            this.InitializeComponent();
+           
+            var instanceContext = new InstanceContext(this);
+            _proxy = new PriceTickerClient(instanceContext);
+            _proxy.Subscribe();
+
+            _stocks = _proxy.GetAllStocks();
+            this.McDataGrid.ItemsSource = _stocks;
+
+            this.Closing += (sender, args) =>
+            {
+                try
+                {
+                    _proxy?.Unsubscribe();
+                }
+                catch
+                {
+                    // ignored
+                }
+            };
+        }
+
+        public void PriceChange(string code, string name, decimal price)
+        {
+            if (_stocks != null)
+            {
+                var customerIndex = _stocks.IndexOf(_stocks.FirstOrDefault(c => c.Code == code));
+                if (customerIndex >= 0)
+                {
+                    _stocks[customerIndex] = new Stock {Code = code, Name = name, Price = price };
+
+                    this.McDataGrid.Dispatcher.Invoke(DispatcherPriority.Background, new Action(() =>
+                    {
+                        this.McDataGrid.Items.Refresh();
+                    }));
+                }
+            }
+        }
+    }
+```
+
+For More info about SqlTableDependency, refere to https://github.com/christiandelbianco/monitor-table-change-with-sqltabledependency "Logo Title Text 2" 
