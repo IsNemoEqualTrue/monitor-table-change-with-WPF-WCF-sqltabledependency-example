@@ -8,8 +8,16 @@ SqlTableDependency class provides access to notifications without knowing anythi
 Listen for table change alert
 Using the SqlTableDependency is a good way to make your data driven application (whether it be Web or Windows Forms) more efficient by removing the need to constantly re-query your database checking for data changes.
 
-Instead of executing a request from client to the database, we do the reverse: sending a notification from database to clients applications.
+**Instead of executing a request from client to the database, we do the reverse: sending a notification from database to clients applications**.
 
 The following video show how to build a web application able to send real time notifications to clients. The code is visible below:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/c2LfyCmy65A/0.jpg)](https://www.youtube.com/watch?v=c2LfyCmy65A)
+
+## Get notifications on record change using WPF and WCF
+This example show how to keep up to date WPF client applications displaying Stock prices. Every WPF client has a grid that needs to be automatically updated whenever a stock price change.
+
+### WCF server application implementing Publish-Subscribe pattern
+Let's assume that we have a table as:
+
+
