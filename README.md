@@ -20,6 +20,19 @@ This example show how to keep up to date WPF client applications displaying Stoc
 ### WCF server application implementing Publish-Subscribe pattern
 Let's assume that we have a table as:
 
+```SQL
+CREATE TABLE [Stocks] (
+	[Code] [nvarchar](50) NULL,
+	[Name] [nvarchar](50) NULL,
+	[Price] [decimal](18, 0) NULL)
+```
+
+that is continuously update with stock's value from an external thread. We want our WPF application be notified every time a new value is updated without polling periodically the Stocks table. This means we want receive notifications from our database on every table change.
+
+To achieve this, we need a service application that will take care of create a SqlTableDependency object and for every change notification received, forward this new stock price to all interested WPF client applications.
+
+For this we are going to use a WCF service implementing the Publish-Subscribe pattern. This service will act as stock price broker receiving database notifications on any stock price change and in turn will notify subscribed WCF client applications:
+
 ![alt text][shema]
 
 [shema]: https://github.com/christiandelbianco/Monitor-table-change-with-WPF-WCF-sqltabledependency/blob/master/Schema-min.png "Notifications"
